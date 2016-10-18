@@ -10,9 +10,21 @@ namespace ComicBookGallery.Controllers
 {
     public class ComicBookController : Controller
     {
-        public string Detail()
+        public ActionResult Detail()
         {
-            return "Hello from the comic book controller";  
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday)
+            {
+                return Redirect("/");
+                //return new RedirectResult("/"); 
+            }
+
+            return Content("Hello from the comic book controller");
+            //return new ContentResult()
+            //{
+            //    Content = "Hello from the comic book controller"
+            //};
         }
     }
+
 }
+
