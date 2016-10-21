@@ -15,7 +15,7 @@ namespace ComicBookGallery.Controllers
         {
             var comicBook = new ComicBook()
             {
-                SeriesTitle = "The Amazing Spider - Man",
+                SeriesTitle = "The Amazing Spider Man",
                 IssueNumber = 700,
                 Description = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>",
                 Artists = new Artist[]
@@ -43,7 +43,7 @@ namespace ComicBookGallery.Controllers
             //    "Letters: Chris Eliopoulos"
             //};
 
-            return View(comicBook);
+            return View(comicBook);                                                                                                                                                                                                                                                                                                                                 
             //if (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday)
             //{
             //    return Redirect("/");
